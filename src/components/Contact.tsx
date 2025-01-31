@@ -25,7 +25,7 @@ export default function Contact() {
               <Phone className="w-6 h-6 text-black" />
               <div>
                 <h3 className="text-lg font-medium">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+91 90520 20428<br/>+91 98859 88005</p>
               </div>
             </div>
             
@@ -33,7 +33,11 @@ export default function Contact() {
               <MapPin className="w-6 h-6 text-black" />
               <div>
                 <h3 className="text-lg font-medium">Address</h3>
-                <p className="text-gray-600">123 Business Street<br />Tech City, TC 12345</p>
+                <p className="text-gray-600">
+                  Plot 699, Vivekananda Nagar<br/>
+                  Kukatpally, Hyderabad<br/>
+                  Telangana, India - 500 072
+                </p>
               </div>
             </div>
           </div>

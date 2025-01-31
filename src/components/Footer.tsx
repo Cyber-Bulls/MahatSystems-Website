@@ -1,9 +1,8 @@
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-react'
+import { Facebook, Twitter, Linkedin, Mail, Phone, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   const menuItems = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#solutions", label: "Solutions" },
     { href: "#contact", label: "Contact" }
@@ -23,7 +22,7 @@ export default function Footer() {
               <a href="#" className="hover:text-gray-300"><Facebook className="w-5 h-5" /></a>
               <a href="#" className="hover:text-gray-300"><Twitter className="w-5 h-5" /></a>
               <a href="#" className="hover:text-gray-300"><Linkedin className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-gray-300"><Instagram className="w-5 h-5" /></a>
+              <a href="https://wa.me/919052020428" className="hover:text-gray-300"><MessageCircle className="w-5 h-5" /></a>
             </div>
           </div>
 
@@ -60,9 +59,12 @@ export default function Footer() {
                 <Mail className="w-5 h-5 mr-2" />
                 <span className="text-gray-300">contact@mahatsystems.com</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-start">
                 <Phone className="w-5 h-5 mr-2" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <div>
+                  <span className="text-gray-300">+91 90520 20428</span><br/>
+                  <span className="text-gray-300">+91 98859 88005</span>
+                </div>
               </div>
             </div>
           </div>
