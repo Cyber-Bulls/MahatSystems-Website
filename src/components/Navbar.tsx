@@ -6,13 +6,14 @@ export default function Navbar() {
 
   const menuItems = [
     { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#solutions", label: "Solutions" },
     { href: "#contact", label: "Contact" }
   ]
 
   return (
-    <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <nav className="fixed w-full bg-white/60 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
