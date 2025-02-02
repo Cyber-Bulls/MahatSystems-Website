@@ -1,5 +1,6 @@
-## Mahat Systems, by Srcbook
+## Mahat Systems website
 
+# vite, react, typescript, tailwind
 
 To run the devserver:
 ```

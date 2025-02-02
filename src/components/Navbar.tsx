@@ -9,16 +9,23 @@ export default function Navbar() {
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#solutions", label: "Solutions" },
+    { href: "#clients", label: "Clients" },
+    { href: "#partners", label: "Partners" },
     { href: "#contact", label: "Contact" }
   ]
 
   return (
-    <nav className="fixed w-full bg-grey/100 backdrop-blur-sm z-50 shadow-sm">
+    <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-             <img src="../assets/logo/logo1.png" alt="Mahat Systems Logo" className="h-8 w-8 mr-2" />
-            <h1 className="text-2xl font-bold tracking-wider">MAHAT SYSTEMS</h1>
+            <a href="#home" className="flex items-center">
+              <img 
+                src="/logo.png" 
+                alt="Mahat Systems" 
+                className="h-14 w-auto"
+              />
+            </a>
           </div>
           
           {/* Desktop menu */}
@@ -27,7 +34,7 @@ export default function Navbar() {
               <a 
                 key={item.href}
                 href={item.href}
-                className="text-gray-800 hover:text-black"
+                className="text-gray-800 hover:text-black transition-colors"
               >
                 {item.label}
               </a>
@@ -48,13 +55,13 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
               {menuItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-800 hover:text-black"
+                  className="block px-3 py-2 text-gray-800 hover:text-black transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
