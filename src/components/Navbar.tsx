@@ -23,7 +23,7 @@ export default function Navbar() {
               <img 
                 src="/logo.png" 
                 alt="Mahat Systems" 
-                className="h-14 w-auto"
+                className="h-12 w-auto"
               />
             </a>
           </div>
