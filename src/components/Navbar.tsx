@@ -23,7 +23,7 @@ export default function Navbar() {
               <img 
                 src="/logo.png" 
                 alt="Mahat Systems" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </a>
           </div>
@@ -34,7 +34,7 @@ export default function Navbar() {
               <a 
                 key={item.href}
                 href={item.href}
-                className="text-gray-800 hover:text-black transition-colors"
+                className="text-gray-900 hover:text-black transition-colors"
               >
                 {item.label}
               </a>
